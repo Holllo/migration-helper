@@ -19,7 +19,7 @@ export type Migration<V> = {
  * tested, while the second argument will be the version passed into
  * {@link migrate}.
  *
- * If left undefined, `a < b` will be used. This works for {@link Date dates},
+ * If left undefined, `a <= b` will be used. This works for {@link Date dates},
  * {@link Number numbers} and {@link String strings}. So if you want to use a
  * different type for versioning you should create your own function.
  */
@@ -35,7 +35,7 @@ export async function migrate<V>(
   data: unknown,
   version: V,
   migrations: Array<Migration<V>>,
-  skip: SkipMigrationFn<V> = (a, b) => a < b,
+  skip: SkipMigrationFn<V> = (a, b) => a <= b,
 ): Promise<unknown> {
   let migratedData = data;
 
