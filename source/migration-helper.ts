@@ -44,7 +44,7 @@ export async function migrate<V>(
       continue;
     }
 
-    migratedData = migration.migrate(migratedData);
+    migratedData = await migration.migrate(migratedData);
   }
 
   return migratedData;

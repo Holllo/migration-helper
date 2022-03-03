@@ -34,7 +34,7 @@ const migrations: Array<Migration<string>> = [
 ];
 
 // Migrate your data.
-const migrated = migrate(data, version, migrations);
+const migrated = await migrate(data, version, migrations);
 
 // Congratulations, your data is now on version 1.0.2!
 console.log(migrated);

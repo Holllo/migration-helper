@@ -53,6 +53,9 @@
   },
   "xo": {
     "prettier": true,
+    "rules": {
+      "no-await-in-loop": "off"
+    },
     "space": true
   }
 }
