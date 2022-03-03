@@ -2,7 +2,7 @@
   "name": "migration-helper",
   "description": "A tiny helper library for migrating data.",
   "license": "GPL-3.0-or-later",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Holllo <helllo@holllo.cc>",
   "repository": "https://github.com/Holllo/migration-helper",
   "scripts": {
